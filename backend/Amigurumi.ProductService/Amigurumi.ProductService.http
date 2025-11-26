@@ -1,0 +1,6 @@
+@Amigurumi.ProductService_HostAddress = http://localhost:0
+
+GET {{Amigurumi.ProductService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

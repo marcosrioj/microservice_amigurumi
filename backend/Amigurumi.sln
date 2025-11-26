@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amigurumi.Contracts", "Amigurumi.Contracts\Amigurumi.Contracts.csproj", "{6A29C16A-F7C4-4CAB-9C4A-A53039A8085C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amigurumi.IdentityService", "Amigurumi.IdentityService\Amigurumi.IdentityService.csproj", "{0E6DD6BD-B6A2-4973-9F4F-F4636B4B9BCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amigurumi.ProductService", "Amigurumi.ProductService\Amigurumi.ProductService.csproj", "{68014313-D56B-4D95-951E-683F5D5F1C94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amigurumi.OrderService", "Amigurumi.OrderService\Amigurumi.OrderService.csproj", "{077D9D8E-DAE0-436C-AF34-C8A1C544BCD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amigurumi.Gateway", "Amigurumi.Gateway\Amigurumi.Gateway.csproj", "{95A45A85-FAD5-4B85-9F2B-392E8F56E88D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A29C16A-F7C4-4CAB-9C4A-A53039A8085C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A29C16A-F7C4-4CAB-9C4A-A53039A8085C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A29C16A-F7C4-4CAB-9C4A-A53039A8085C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A29C16A-F7C4-4CAB-9C4A-A53039A8085C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E6DD6BD-B6A2-4973-9F4F-F4636B4B9BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E6DD6BD-B6A2-4973-9F4F-F4636B4B9BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E6DD6BD-B6A2-4973-9F4F-F4636B4B9BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E6DD6BD-B6A2-4973-9F4F-F4636B4B9BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68014313-D56B-4D95-951E-683F5D5F1C94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68014313-D56B-4D95-951E-683F5D5F1C94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68014313-D56B-4D95-951E-683F5D5F1C94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68014313-D56B-4D95-951E-683F5D5F1C94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{077D9D8E-DAE0-436C-AF34-C8A1C544BCD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077D9D8E-DAE0-436C-AF34-C8A1C544BCD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077D9D8E-DAE0-436C-AF34-C8A1C544BCD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077D9D8E-DAE0-436C-AF34-C8A1C544BCD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A45A85-FAD5-4B85-9F2B-392E8F56E88D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A45A85-FAD5-4B85-9F2B-392E8F56E88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A45A85-FAD5-4B85-9F2B-392E8F56E88D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A45A85-FAD5-4B85-9F2B-392E8F56E88D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

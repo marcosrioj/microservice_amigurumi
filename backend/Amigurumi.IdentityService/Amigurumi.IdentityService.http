@@ -1,0 +1,6 @@
+@Amigurumi.IdentityService_HostAddress = http://localhost:0
+
+GET {{Amigurumi.IdentityService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

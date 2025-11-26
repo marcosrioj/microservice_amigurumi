@@ -1,0 +1,153 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.IdentityService/Amigurumi.IdentityService.csproj": {}
+  },
+  "projects": {
+    "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.Contracts/Amigurumi.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.Contracts/Amigurumi.Contracts.csproj",
+        "projectName": "Amigurumi.Contracts",
+        "projectPath": "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.Contracts/Amigurumi.Contracts.csproj",
+        "packagesPath": "/home/marcos/.nuget/packages/",
+        "outputPath": "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/marcos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.IdentityService/Amigurumi.IdentityService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.IdentityService/Amigurumi.IdentityService.csproj",
+        "projectName": "Amigurumi.IdentityService",
+        "projectPath": "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.IdentityService/Amigurumi.IdentityService.csproj",
+        "packagesPath": "/home/marcos/.nuget/packages/",
+        "outputPath": "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.IdentityService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/marcos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "/usr/lib/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.Contracts/Amigurumi.Contracts.csproj": {
+                "projectPath": "/home/marcos/projects/microservice_amigurumi/backend/Amigurumi.Contracts/Amigurumi.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.5.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.111/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: amigurumi
+      POSTGRES_PASSWORD: amigurumi
+      POSTGRES_DB: amigurumi
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  identity-service:
+    build:
+      context: ./backend
+      dockerfile: Amigurumi.IdentityService/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      Jwt__SecretKey: dev-secret-change-this-please
+    ports:
+      - "5001:8080"
+    depends_on:
+      - postgres
+
+  product-service:
+    build:
+      context: ./backend
+      dockerfile: Amigurumi.ProductService/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      Jwt__SecretKey: dev-secret-change-this-please
+    ports:
+      - "5002:8080"
+    depends_on:
+      - postgres
+
+  order-service:
+    build:
+      context: ./backend
+      dockerfile: Amigurumi.OrderService/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      Jwt__SecretKey: dev-secret-change-this-please
+    ports:
+      - "5003:8080"
+    depends_on:
+      - postgres
+
+  gateway:
+    build:
+      context: ./backend
+      dockerfile: Amigurumi.Gateway/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      Services__Identity: http://identity-service:8080
+      Services__Product: http://product-service:8080
+      Services__Order: http://order-service:8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      - identity-service
+      - product-service
+      - order-service
+
+  shop-frontend:
+    build:
+      context: ./frontend/shop
+      dockerfile: Dockerfile
+    ports:
+      - "5173:4173"
+    depends_on:
+      - gateway
+
+  admin-frontend:
+    build:
+      context: ./frontend/admin
+      dockerfile: Dockerfile
+    ports:
+      - "5174:4173"
+    depends_on:
+      - gateway
+
+volumes:
+  pgdata: {}
